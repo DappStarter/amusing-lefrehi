@@ -8,6 +8,7 @@
     "license": "MIT",
     "scripts": {
         "start": "npm run deploy && npm run dapp",
+        "ganache": "npx ganache-cli -m \"gesture hill fresh spot toy note ranch proud include clip bottom ghost\" -p 7545"
         "dapp": "npm run lib && webpack-dev-server --mode development --config webpack.config.dapp.js",
         "server": "rm -rf ./build/server && npm run lib && webpack --mode development --config webpack.config.server.js",
         "lib": "webpack --mode development --config webpack.config.lib.js",
